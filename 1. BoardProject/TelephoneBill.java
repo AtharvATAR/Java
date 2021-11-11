@@ -10,10 +10,12 @@ class TelephoneBill {
         Scanner input = new Scanner(System.in);
 
         // input
+        System.out.println("----------------------------");
         System.out.print("Enter your Customer Number: ");
         custno = input.nextInt();
         System.out.print("Enter the number of Message Units: ");
         message = input.nextInt();
+        System.out.println("----------------------------");
 
         // conditional statements
         if (message <= 80) {
@@ -27,7 +29,8 @@ class TelephoneBill {
         }
 
         // output
-        System.out.format("Customer No: %d\nMessage Units: %d\nTotal Bill: %.2f", custno, message, bill);
+        System.out.format("Customer No: %d\nMessage Units: %d\nTotal Bill: %.2f\n", custno, message, bill);
+        System.out.println("----------------------------");
 
         // closing object of Scanner Class
         input.close();
