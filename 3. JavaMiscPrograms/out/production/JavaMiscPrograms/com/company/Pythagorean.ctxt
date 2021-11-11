@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Pythagorean
+comment0.text=\r\n\ Solve\ problems\ with\ the\ pythagorean\ theorem.\ \ Work\ included.\r\n\ \r\n\ @author\ Andrew\ Bourgeois\ \r\n\ @version\ 2/7/2014\r\n
+comment1.params=
+comment1.target=Pythagorean()
+comment2.params=
+comment2.target=void\ a()
+comment3.params=
+comment3.target=void\ b()
+comment4.params=
+comment4.target=void\ c()
+numComments=5

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=MathSeries3
+comment0.text=\r\nEXPLANATION\r\nQ.\ 3.\ Write\ a\ program\ to\ print\ Pattern\ A\ AB\ ABC\r\nStep1\:\ Initialize\ the\ variables\r\nStep2\:\ Initialize\ the\ scanner\ class\ and\ title\r\nStep3\:\ Taking\ input\ from\ the\ user\r\nStep4\:\ taking\ 2\ loops\ ne\ for\ the\ lines\ and\ one\ for\ A\ A+1\ A+2\r\nStep4\:\ Close\ the\ Scanner\ class\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

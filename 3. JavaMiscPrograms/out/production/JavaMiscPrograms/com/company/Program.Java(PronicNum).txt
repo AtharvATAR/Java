@@ -1,0 +1,33 @@
+import java.util.*;
+
+class PronicNumber
+{
+    public static void main(String[]args)
+    {
+        Boolean ans = false;
+
+        //initializing Scanner(input) class
+        Scanner input = new Scanner(System.in);
+
+        //asking for input
+        System.out.print("Input a number: ");
+        int num = input.nextInt();
+
+        //loop for checking if num is equal to the product of 2 consecutive numbers
+        for(int i=0; i<num; i++)
+        {
+            //if number = product of 2 consecutive numbers
+            if(i*(i+1) == num)
+            {
+                ans = true; //assigning true to answer
+                break; //if pair reached then break the loop
+            }
+        }
+
+        //checking if answer is true or false
+        if(ans == true)
+            System.out.println(num + " is a Pronic Number.");
+        else
+            System.out.println(num + " is Not a Pronic Number.");
+    }
+}

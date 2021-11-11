@@ -1,0 +1,97 @@
+import java.util.*;
+
+public class MathsSeries
+{
+    public static void main(String[]args)
+    {
+        //initializing Scanner Class
+        Scanner input = new Scanner(System.in);
+
+        //Title and program function
+        System.out.println("Maths Series:");
+        System.out.println("The maths series: ");
+        System.out.println("1) To display the sum of the series: (x^1 + x^2 + x^3 +......x^n)");
+        System.out.println("2) to display the series: 0, 7, 26, 63....p times");
+        System.out.println("3) to display the sum of: 1/2 + 1/3 + 1/4.....1/10");
+
+        //Asking input
+        System.out.println("Enter the number of the series which you want to use: ");
+        int seriesNum = input.nextInt();
+
+        //calling the methods
+        if(seriesNum == 1)
+        {
+            series1(3, 4);
+        }
+
+        if(seriesNum == 2)
+        {
+            series2(45);
+        }
+
+        if(seriesNum == 2)
+        {
+            series3();
+        }
+    }
+
+    public static void series1(int x, int n)
+    {
+        //initialising variables
+        double ansSeries1 = 0;
+
+        //Display the sum of series: (x^1 + x^2 + x^3 + ... + x^n) / b
+        System.out.println("Performing series number 1)...");
+
+        //loop
+        for(int i = 0; i <= n; i++)
+        {
+            ansSeries1 =+ Math.pow(x, i);
+            if(i == n)
+            {
+                break;
+            }
+        }
+        System.out.println("Answer: " + ansSeries1);
+    }
+
+    public static void series2(int p)
+    {
+        //initialising variables
+        int d = 0,i;
+        //display the series: 0, 7, 26, 63....p times
+        System.out.println("Performing series number 2)...");
+
+        //loop
+        for(i = 1; i <= p; i++)
+        {
+            d = i * i * i - 1;
+
+            //to check if i = p (not required)
+            if(i == p)
+            {
+                break;
+            }
+        }
+        //output
+        System.out.println(d + ", ");
+    }
+
+    public static void series3()
+    {
+        //initialising variables
+        double sum = 0;
+
+        //display the sum of: 1/2 + 1/3 + 1/4.....1/10
+        System.out.println("Performing series number 3)...");
+
+        //loop
+        for(int i = 2; i <= 10; i++)
+        {
+            sum =+ (1.0 / i);
+        }
+
+        //output
+        System.out.println("sum series = " + sum);
+    }
+}
