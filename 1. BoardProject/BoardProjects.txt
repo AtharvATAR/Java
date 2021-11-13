@@ -1,0 +1,22 @@
+JAVA PROGRAMS
+
+1. Rhombus star pattern.
+2. Electricity bill
+3. Function overloading
+4. Private cab
+5. Inheritance - String Palindrome, Number Palindrome
+6. Input 6 subjects marks in an array and calculate percentage.
+7. Binary search program [5,7,11,15,20,30,45,89,97]
+8. Input name and total marks in an array and calculate average and deviation.
+9. Linear search - take input and search
+10. To check disarium number.
+11. Input string and check any letter repeated in string.
+12. String array searching.
+13. Input city and STD of particular city and use search option.
+14. Check twin prime numbers from particular range.
+15. Input sentence and calculate total vowel, space, consonants and words.
+16. Menu driven program - 1. check is it composite number, 2. Find smallest digit from entered number.
+17. Library program late fees calculation.
+18. Input sentence : Output Sentence in capital and double letters in sequence. 
+19. Telephone bill.
+20. Security man pay calculation.

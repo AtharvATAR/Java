@@ -1,19 +1,25 @@
 import java.util.*;
 
-public class rhombusProject {
+class RhombusSimple {
     public static void main(String[] args) {
-        int n;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number");
-        n = sc.nextInt();
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n - i; j++) {
+        //
+        Scanner input = new Scanner(System.in);
+
+        int inputNum, loopVar, loopVar2, loopVar3;
+
+        System.out.print("Enter The Number Of Rows/Columns: ");
+        inputNum = input.nextInt();
+
+        for (loopVar = 1; loopVar <= inputNum; loopVar++) {
+            for (loopVar2 = 1; loopVar2 <= inputNum - loopVar; loopVar2++) {
                 System.out.print(" ");
             }
-            for (int k = 1; k <= n; k++) {
-                System.out.print("* ");
+            for (loopVar3 = 1; loopVar3 <= inputNum; loopVar3++) {
+                System.out.println("* ");
             }
             System.out.println();
         }
+
+        input.close();
     }
 }
