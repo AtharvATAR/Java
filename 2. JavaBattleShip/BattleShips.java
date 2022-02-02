@@ -18,28 +18,6 @@ public class BattleShips {
     public static String[][] grid = new String[numRows][numCols];
     public static int[][] missedGuesses = new int[numRows][numCols];
 
-    public static void main(String[] args) {
-        System.out.println("**** Welcome to Battle Ships game ****");
-        System.out.println("Right now, sea is empty\n");
-
-        // Step 1 – Create the ocean map
-        createOceanMap();
-
-        // Step 2 – Deploy player’s ships
-        deployPlayerShips();
-
-        // Step 3 - Deploy computer's ships
-        deployComputerShips();
-
-        // Step 4 Battle
-        do {
-            Battle();
-        } while (BattleShips.playerShips != 0 && BattleShips.computerShips != 0);
-
-        // Step 5 - Game over
-        gameOver();
-    }
-
     public static void createOceanMap() {
         // First section of Ocean Map
         System.out.print("  ");
@@ -217,5 +195,27 @@ public class BattleShips {
         for (int i = 0; i < numCols; i++)
             System.out.print(i);
         System.out.println();
+    }
+
+    public static void main(String[] args) {
+        System.out.println("**** Welcome to Battle Ships game ****");
+        System.out.println("Right now, sea is empty\n");
+
+        // Step 1 – Create the ocean map
+        createOceanMap();
+
+        // Step 2 – Deploy player’s ships
+        deployPlayerShips();
+
+        // Step 3 - Deploy computer's ships
+        deployComputerShips();
+
+        // Step 4 Battle
+        do {
+            Battle();
+        } while (BattleShips.playerShips != 0 && BattleShips.computerShips != 0);
+
+        // Step 5 - Game over
+        gameOver();
     }
 }
